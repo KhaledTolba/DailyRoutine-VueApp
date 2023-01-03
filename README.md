@@ -1,4 +1,4 @@
-# routine-app
+# DailyRoutine-VueApp
 
 ## Project setup
 ```
