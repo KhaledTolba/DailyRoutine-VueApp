@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <appHeader/>
+  <div class="w-full flex">
+    <appTasks />
+  </div>
+  <p class="pt-10 text-center font-mono text-sm">Don't close it until you're done.</p>
+   <p class="text-center font-thin text-red-800 text-sm"> Caution, everything will be deleted</p>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import appHeader from './components/appHeader.vue';
+import appTasks from './components/appTasks.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld,
+    appHeader,
+    appTasks,
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
